@@ -4,7 +4,6 @@ st.title("データリセット")
 
 st.write("保存されているユーザー情報をリセットします")
 
-# 現在の情報を表示
 if st.session_state.get('name'):
     st.info("現在保存されている情報:")
     st.write(f"名前: {st.session_state.get('name', '未設定')}")
