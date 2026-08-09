@@ -4,8 +4,8 @@ if ('name' in st.session_state and st.session_state.name):
     st.success("保存されている情報:")
     col1,col2=st.columns(2)
     with col1:
-        st.metric("名前",)
-        st.metric("学年",)
+        st.metric("名前",st.session_state.name)
+        st.metric("学年",st.session_state.grade)
     with col2:
         if st.session_state.get('hobbies'):
             st.write("**趣味:**")
